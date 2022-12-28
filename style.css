@@ -54,8 +54,6 @@ html,body{
   justify-items: center;
 }
 
-
-
 .video-as-bg{
   display: flex;
   flex-direction: column;
@@ -86,7 +84,10 @@ html,body{
   flex-direction: column;
   margin-top: auto;
   margin-left: 1.5vw;
-  
+}
+.warning{
+  display: flex;
+  flex-direction: row;
 }
 .side-nav{
   display: flex;
@@ -124,6 +125,4 @@ html,body{
       height: 5vh;
       width: auto;
     }
-
-
   }
