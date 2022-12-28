@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="content">
+      <video id="bgvideo" autoplay onclick="playPause()" loop>
+        <source src="./assets/chainsawman.mp4" type="video/mp4" />
+      </video>
       <div class="video-as-bg">
-        <video id="bgvideo" autoplay muted onclick="playPause()" loop>
-          <source src="./assets/chainsawman.mp4" type="video/mp4" />
-        </video>
         <div class="top-nav">
           <nav class="top-nav-list">
             <a href="#" class="top-nav-item">Live</a>
@@ -22,27 +22,42 @@
             <img src="./assets/search.svg" alt="Search Icon" class="top-nav-item" />
           </nav>
         </div>
-        <div class="video-info">
-          <p>Akamz <img id="checkmark" src="./assets/checkmark.png" alt="checkmark" /></p>
-          <p>Compilation of Akamz</p>
-          <p>&#9835;@Akamz original song</p>
-          <div class="warning">
-            <img src="./assets/exclamation.svg" alt="exclamation" />
-            <p>
-              The actions in this video are performed by professionals or supervised by professionals. Do not attempt.
-            </p>
-          </div>
-        </div>
-        <div class="side-nav">
-          <img src="./assets/user-img.jpg" alt="user image" />
-          <img src="./assets/heartBlack.svg" alt="Like icon" />
-          <img src="./assets/comment.svg" alt="comment" />
-          <img src="./assets/bookmark.svg" alt="save" />
-          <img src="./assets/share.svg" alt="share" />
-          <img src="./assets/profile.svg" alt="music" />
+        <div class="mid" onclick="playPause()">
+            <div class="video-info">
+              <p>Akamz <img class="checkmark" src="./assets/checkmark.png" alt="checkmark" /></p>
+              <p>Compilation of Akamz</p>
+              <p>&#9835;@Akamz original song</p>
+              <div class="warning">
+                <p>
+                  <img src="./assets/exclamation.svg" class="checkmark" alt="exclamation" />
+                  The actions in this video are performed by professionals or supervised by professionals. Do not attempt.
+                </p>
+              </div>
+            </div>
+            <div class="side-nav">
+              <img src="./assets/user-img.jpg" alt="user image"/>
+              <img src="./assets/heartBlack.svg" alt="Like icon" 
+                id="like-img" onclick="liked()"/>
+              <img src="./assets/comment.svg" alt="comment" />
+              <img src="./assets/bookmark.svg" alt="save" />
+              <img src="./assets/share.svg" alt="share" />
+              <video id="music" autoplay loop muted>
+                <source src="./assets/music.mp4" type="video/mp4">
+              </video>
+            </div>
         </div>
       </div>
-      <div class="bottom-nav"></div>
+      <div class="bottom-nav">
+        <img src="./assets/home.svg" alt="Home">
+        <img src="./assets/shop.svg" alt="Shop">
+        <img src="./assets/add.svg" alt="Add">
+        <img src="./assets/inbox.svg" alt="Inbox">
+        <img src="./assets/profile.svg" alt="profile">
+      </div>
     </div>
+    <img id="videoPausedorPlay" src="./assets/pause.svg" alt="Paused">
+    <script type="text/javascript" src="./script.js">
+
+    </script>
   </body>
 </html>
